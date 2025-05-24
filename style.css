@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+#homepage {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+#homepage img {
+  max-width: 90%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#homepage img:hover {
+  transform: scale(1.03);
+}
+
+.btn-warning {
+  border-radius: 30px;
+}
+
+.tentang-index {
+  background-color: #fff;
+}
+
+.tentang-brand {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .tentang-index p {
+    padding: 0 3rem;
+  }
+}
+
+.produk-scroll-container {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.produk-card {
+  width: 250px;
+  scroll-snap-align: start;
+  background-color: white;
+}
+.carousel-caption {
+  bottom: 20px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff;
+}
+
+.carousel-caption.bg-dark {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.produk-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.contact-index ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
