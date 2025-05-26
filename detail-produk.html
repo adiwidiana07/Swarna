@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Daftar Produk - SWARNA</title>
+  <title>Detail Produk - SWARNA</title>
   <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm border-bottom" style="z-index: 999; background-color: #f2f2f2;" id="mainNavbar">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
@@ -41,40 +40,22 @@
     </div>
   </div>
 </nav>
-  <!-- Daftar Produk -->
-  <div class="container" style="padding-top: 100px; padding-bottom: 50px;">
-    <h2 class="text-center mb-5 fw-bold">Produk Kami</h2>
-    <div class="row g-4">
-      <!-- Produk 1 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <a href="detail-produk.html" class="text-decoration-none text-dark">
-            <img src="img/model 1.png" class="card-img-top" alt="Kaos Etnik" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Kaos Etnik</h5>
-              <p class="card-text text-muted">Rp 150.000</p>
-              <span class="btn btn-dark mt-auto w-100">Lihat Detail</span>
-            </div>
-          </a>
-        </div>
+  <div class="container" style="padding-top: 100px">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/model 1.png" alt="Kaos Etnik" class="img-fluid rounded shadow-sm" id="detail-img">
       </div>
-      <!-- Produk 2 -->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card h-100 shadow-sm">
-          <a href="detail-produk.html" class="text-decoration-none text-dark">
-            <img src="img/model 1.png" class="card-img-top" alt="Tote Bag Batik" />
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Tote Bag Batik</h5>
-              <p class="card-text text-muted">Rp 95.000</p>
-              <span class="btn btn-dark mt-auto w-100">Lihat Detail</span>
-            </div>
-          </a>
-        </div>
+      <div class="col-md-6">
+        <h1 id="detail-title">Kaos Etnik</h1>
+        <p class="text-muted" id="detail-price">Rp 150.000</p>
+        <p id="detail-description">
+          Kaos dengan desain etnik khas Indonesia. Nyaman dipakai sehari-hari, cocok untuk semua kegiatan kasual dengan sentuhan budaya.
+        </p>
+        <button class="btn btn-dark mt-3">Beli Sekarang</button>
       </div>
-      <!-- Tambah produk lainnya sesuai kebutuhan -->
     </div>
   </div>
-<h1>ON PROGRESS</h1>
+
   <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
