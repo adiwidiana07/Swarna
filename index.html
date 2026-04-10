@@ -1,208 +1,349 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Utama</title>
- <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
- <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
- <link rel="icon" href="img/SWARNA-logo no1.png" type="image/png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWARNA Production</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
 </head>
 <body>
-<!-- Main Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm border-bottom" style="z-index: 999; background-color: #f2f2f2;" id="mainNavbar">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="img/SWARNA-logo no1.png" alt="Logo SWARNA" width="40" height="40" class="me-2">
-      <div>
-        <h1 class="h5 mb-0 text-dark">SWARNA</h1>
-        <small class="text-muted">Ragam Gaya, Satu Makna</small>
-      </div>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-  <ul class="navbar-nav me-3">
-    <li class="nav-item"><a class="nav-link active text-dark" href="#">Beranda</a></li>
-    <li class="nav-item"><a class="nav-link text-dark" href="#tentang">Tentang</a></li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle text-dark" href="#produk" id="produkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Produk
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="produkDropdown">
-        <li><a class="dropdown-item" href="#produk">Semua Produk</a></li>
-        <li><a class="dropdown-item" href="#">Special Edition</a></li>
-        <li><a class="dropdown-item" href="#">Tote Bag</a></li>
-        <li><a class="dropdown-item" href="#">Aksesori</a></li>
-      </ul>
-    </li>
-    <li class="nav-item"><a class="nav-link text-dark" href="#contact">Kontak</a></li>
-  </ul>
 
-  <!-- FORM SEARCH -->
-  <form class="d-flex" role="search" action="#" method="GET">
-    <input class="form-control me-2" type="search" placeholder="Cari produk..." aria-label="Search">
-    <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
-  </form>
-</div>
-  </div>
-</nav>
-
- <!-- Section Homepage Modern -->
- <section id="homepage" class="d-flex align-items-center py-5 ">
-  <div class="container">
-   <div class="row align-items-center">
-    <!-- Teks -->
-    <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start">
-     <h1 class="display-5 fw-bold" style="color: #B3944F;">RAGAM GAYA</h1>
-     <h2 class="display-6 fw-bold text-dark">SATU MAKNA</h2>
-     <p class="mt-4 lead">
-      SWARNA adalah perwujudan dari ragam itu. Sebuah wujud yang merayakan warna-warni budaya dalam balutan modernitas anak muda.
-     </p>
-<a href="#produk" class="custom-btn">
-  Lihat Produk <i class="fas fa-arrow-right"></i>
+<!-- ════════════ NAVBAR ════════════ -->
+<nav id="navbar">
+<a class="nav-brand" href="#">
+  <img src="img/SWARNA-removebg-preview.png" alt="Swarna Logo" 
+       style="width:42px;height:42px;object-fit:contain;">
+  <span class="brand-name">SWARNA</span>
 </a>
 
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 
-    </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Galeri</a></li>
+    <li><a href="#cta">Kontak</a></li>
+  </ul>
+</nav>
 
-    <!-- Gambar -->
-    <div class="col-md-6 text-center">
-     <img src="img/SWARNA-removebg-preview.png" alt="Gambar Hero" class="img-fluid">
+
+<!-- ════════════ HERO ════════════ -->
+<section id="hero">
+  <div class="hero-parallax" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-body">
+    <p class="hero-eyebrow">Bali &nbsp;·&nbsp; Indonesia</p>
+
+    <h1 class="hero-title">
+      SWARNA
+      <strong>Production</strong>
+    </h1>
+
+
+    <div class="hero-divider"><span class="diamond"></span></div>
+
+    <div class="hero-cta">
+      <a href="#about" class="btn-gold">Kenali Swarna</a>
+      <a href="divisi.html" class="btn-outline">Divisi Swarna</a>
     </div>
-   </div>
   </div>
- </section>
- <section id="tentang" class="tentang-index py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <img src="img/logo.png" alt="Ilustrasi SWARNA" class="img-fluid rounded shadow-sm">
-      </div>
-      <div class="col-lg-6" id="tentang">
-        <h2 class="fw-bold text-dark mb-3"> <span style="color: #B3944F;">TENTANG </span>SWARNA</h2>
-        <p class="fs-5 text-muted">
-          <span class="text-dark fw-semibold">SWARNA</span> adalah representasi dari <span class=fw-semibold">modernitas</span> yang berpadu dengan
-          <span class="fw-semibold">akar budaya</span>. Nama kami terinspirasi dari kata <em>“sewarna”</em> — lambang kekompakan, dan
-          <em>“swarna”</em> — yang berarti emas, simbol keunikan setiap karya kami.
-        </p>
-        <p class="fs-5 text-muted">
-          Kami percaya bahwa <span class="fw-semibold text-dark">fashion</span> adalah identitas. Setiap desain kami membawa nilai, cerita, dan karakter yang membuat kamu tampil percaya diri sekaligus bangga dengan asal usulmu.
-        </p>
-        <blockquote class="blockquote mt-4 ps-3 border-start border-3 border-dark">
-          <p class="mb-0 fst-italic text-dark">"Budaya bukanlah masa lalu, melainkan cara kita melangkah ke masa depan."</p>
-          <footer class="blockquote-footer mt-1">Tim SWARNA</footer>
-        </blockquote>
-      </div>
-    </div>
+
+  <div class="scroll-hint">
+    <div class="line"></div>
+    <span>Scroll</span>
   </div>
 </section>
-<section id="produk" class="produk-index py-5">
-  <div class="container">
-    <h2 class="fw-bold text-dark mb-4 text-center"> <span style="color: #B3944F;">PRODUK</span> SWARNA</h2>
-    <p class="text-center text-muted fs-5 mb-5">
-      Koleksi modern dengan sentuhan budaya lokal. Tampilkan identitasmu dengan gaya.
+
+
+<!-- ════════════ ABOUT ════════════ -->
+<section id="about">
+  <div class="section-inner">
+
+    <p class="section-label reveal">Tentang Kami</p>
+    <h2 class="section-title reveal reveal-delay-1">
+      Warisan <em>Budaya,</em><br>Estetika Modern
+    </h2>
+    <div class="section-divider reveal reveal-delay-2"><span class="dot"></span></div>
+
+    <p class="about-desc reveal reveal-delay-3">
+      SWARNA adalah studio kreatif berbasis di Bali yang mengangkat identitas budaya lokal ke dalam desain kontemporer. Setiap karya adalah perpaduan antara kearifan tradisional dan visi yang menatap masa depan.
     </p>
 
-    <!-- Horizontal Scroll Wrapper -->
-    <div class="produk-scroll-container d-flex overflow-auto gap-4 pb-3 px-1">
+    <!-- Bali ornament -->
+    <div class="bali-ornament reveal">
+      <svg viewBox="0 0 240 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="15" x2="80" y2="15" stroke="#c9a84c" stroke-width=".7"/>
+        <polygon points="120,3 130,15 120,27 110,15" stroke="#c9a84c" stroke-width=".7" fill="none"/>
+        <polygon points="120,7 126,15 120,23 114,15" fill="#c9a84c" opacity=".25"/>
+        <line x1="160" y1="15" x2="240" y2="15" stroke="#c9a84c" stroke-width=".7"/>
+        <circle cx="90" cy="15" r="2" fill="#c9a84c" opacity=".5"/>
+        <circle cx="150" cy="15" r="2" fill="#c9a84c" opacity=".5"/>
+        <circle cx="96" cy="15" r="1" fill="#c9a84c" opacity=".3"/>
+        <circle cx="144" cy="15" r="1" fill="#c9a84c" opacity=".3"/>
+      </svg>
+    </div>
 
-      <!-- Produk Card 1 -->
-      <div class="produk-card flex-shrink-0 shadow rounded">
-        <img src="img/model 1.png" alt="Kaos Etnik Casual" class="img-fluid rounded-top">
-        <div class="p-3">
-          <h5 class="text-dark">Kaos Etnik Casual</h5>
-          <p class="small text-muted">Gaya modern dengan sentuhan etnik yang kuat.</p>
-        </div>
-      </div>
-      <div class="produk-card flex-shrink-0 shadow rounded">
-        <img src="img/model 1.png" alt="Kaos Etnik Casual" class="img-fluid rounded-top">
-        <div class="p-3">
-          <h5 class="text-dark">Kaos Etnik Casual</h5>
-          <p class="small text-muted">Gaya modern dengan sentuhan etnik yang kuat.</p>
-        </div>
-      </div>
-      <div class="produk-card flex-shrink-0 shadow rounded">
-        <img src="img/model 1.png" alt="Kaos Etnik Casual" class="img-fluid rounded-top">
-        <div class="p-3">
-          <h5 class="text-dark">Kaos Etnik Casual</h5>
-          <p class="small text-muted">Gaya modern dengan sentuhan etnik yang kuat.</p>
-        </div>
-      </div>
+    <!-- Brand logos row -->
+    <div class="brand-logos" style="margin-top:3.5rem">
 
-      <!-- Produk Card 2 -->
-      <div class="produk-card flex-shrink-0 shadow rounded">
-        <img src="img/model 1.png" alt="Kaos Etnik Casual" class="img-fluid rounded-top">
-        <div class="p-3">
-          <h5 class="text-dark">Tote Bag Swarna</h5>
-          <p class="small text-muted">Praktis, stylish, dan sarat karakter lokal.</p>
-        </div>
+      <div class="brand-logo-item reveal">
+        <div class="logo-mark">SW</div>
+        <span class="logo-name">Apparel</span>
       </div>
-
-      <!-- Produk Card 3 -->
-      <div class="produk-card flex-shrink-0 shadow rounded">
-         <img src="img/model 1.png" alt="Kaos Etnik Casual" class="img-fluid rounded-top">
-        <div class="p-3">
-          <h5 class="text-dark">Ganci & Stiker</h5>
-          <p class="small text-muted">Detail kecil yang menunjukan siapa kamu.</p>
-        </div>
+      <div class="brand-logo-item reveal reveal-delay-1">
+        <div class="logo-mark">SW</div>
+        <span class="logo-name">Design</span>
       </div>
-
-      <!-- Tambahkan lebih banyak produk jika perlu -->
+      <div class="brand-logo-item reveal reveal-delay-2">
+        <div class="logo-mark">SW</div>
+        <span class="logo-name">Decor</span>
+      </div>
+      <div class="brand-logo-item reveal reveal-delay-3">
+        <div class="logo-mark">SW</div>
+        <span class="logo-name">Event</span>
+      </div>
+      <div class="brand-logo-item reveal reveal-delay-3">
+        <div class="logo-mark">SW</div>
+        <span class="logo-name">Studio</span>
+      </div>
 
     </div>
 
-    <!-- Tombol -->
-    <div class="text-center mt-4">
-      <a href="produk.html" class="custom-btn px-4 py-2">TAMPILKAN LEBIH BANYAK</a>
+  </div>
+</section>
+
+
+<!-- ════════════ GALLERY ════════════ -->
+<section id="gallery">
+  <div class="section-inner">
+    <p class="section-label reveal">Karya Pilihan</p>
+    <h2 class="section-title reveal reveal-delay-1">
+      Koleksi &amp; <em>Produksi</em>
+    </h2>
+    <div class="section-divider reveal reveal-delay-2"><span class="dot"></span></div>
+  </div>
+
+  <div class="swiper reveal" style="max-width:1100px;margin:0 auto;padding:0 1rem;">
+    <div class="swiper-wrapper">
+
+      <!-- SLIDE 1 – Apparel Mockup -->
+      <div class="swiper-slide">
+        <div class="slide-bg-1 slide-placeholder" style="position:relative;height:100%">
+          <div class="slide-pattern"></div>
+          <div style="text-align:center;z-index:2;position:relative;">
+            <!-- Shirt silhouette SVG -->
+            <svg width="100" height="110" viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto 1rem">
+              <path d="M30 8 L10 30 L22 36 L22 100 L78 100 L78 36 L90 30 L70 8 Q60 18 50 18 Q40 18 30 8Z" stroke="#c9a84c" stroke-width="1" fill="rgba(201,168,76,.07)"/>
+              <line x1="40" y1="55" x2="60" y2="55" stroke="#c9a84c" stroke-width=".5" opacity=".5"/>
+              <line x1="40" y1="63" x2="60" y2="63" stroke="#c9a84c" stroke-width=".5" opacity=".5"/>
+              <circle cx="50" cy="36" r="4" stroke="#c9a84c" stroke-width=".8" fill="none"/>
+            </svg>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:5px;color:rgba(201,168,76,.5)">APPAREL</p>
+          </div>
+        </div>
+        <div class="slide-overlay"><span class="slide-label">Apparel Collection</span></div>
+      </div>
+
+      <!-- SLIDE 2 – Design Mockup -->
+      <div class="swiper-slide">
+        <div class="slide-bg-2 slide-placeholder" style="position:relative;height:100%">
+          <div class="slide-pattern"></div>
+          <div style="text-align:center;z-index:2;position:relative;">
+            <svg width="90" height="110" viewBox="0 0 90 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto 1rem">
+              <rect x="10" y="10" width="70" height="90" rx="2" stroke="#c9a84c" stroke-width="1" fill="rgba(201,168,76,.04)"/>
+              <rect x="18" y="20" width="54" height="30" rx="1" stroke="#c9a84c" stroke-width=".6" fill="rgba(201,168,76,.06)" opacity=".7"/>
+              <line x1="18" y1="60" x2="72" y2="60" stroke="#c9a84c" stroke-width=".5" opacity=".4"/>
+              <line x1="18" y1="68" x2="55" y2="68" stroke="#c9a84c" stroke-width=".5" opacity=".4"/>
+              <line x1="18" y1="75" x2="65" y2="75" stroke="#c9a84c" stroke-width=".5" opacity=".4"/>
+              <line x1="18" y1="82" x2="48" y2="82" stroke="#c9a84c" stroke-width=".5" opacity=".4"/>
+            </svg>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:5px;color:rgba(201,168,76,.5)">DESIGN</p>
+          </div>
+        </div>
+        <div class="slide-overlay"><span class="slide-label">Graphic Design</span></div>
+      </div>
+
+      <!-- SLIDE 3 – Decor -->
+      <div class="swiper-slide">
+        <div class="slide-bg-3 slide-placeholder" style="position:relative;height:100%">
+          <div class="slide-pattern"></div>
+          <div style="text-align:center;z-index:2;position:relative;">
+            <svg width="100" height="110" viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto 1rem">
+              <!-- Vase / decor shape -->
+              <path d="M35 90 Q25 70 28 50 Q30 30 50 25 Q70 30 72 50 Q75 70 65 90Z" stroke="#c9a84c" stroke-width="1" fill="rgba(201,168,76,.06)"/>
+              <line x1="30" y1="90" x2="70" y2="90" stroke="#c9a84c" stroke-width="1"/>
+              <!-- Leaf -->
+              <path d="M50 25 Q60 10 70 15 Q65 25 50 25Z" stroke="#c9a84c" stroke-width=".8" fill="rgba(201,168,76,.08)" opacity=".8"/>
+              <line x1="50" y1="25" x2="62" y2="13" stroke="#c9a84c" stroke-width=".5" opacity=".4"/>
+            </svg>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:5px;color:rgba(201,168,76,.5)">DECOR</p>
+          </div>
+        </div>
+        <div class="slide-overlay"><span class="slide-label">Dekorasi Interior</span></div>
+      </div>
+
+      <!-- SLIDE 4 – Mockup Product -->
+      <div class="swiper-slide">
+        <div class="slide-bg-4 slide-placeholder" style="position:relative;height:100%">
+          <div class="slide-pattern"></div>
+          <div style="text-align:center;z-index:2;position:relative;">
+            <svg width="110" height="100" viewBox="0 0 110 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto 1rem">
+              <!-- Bag mockup -->
+              <rect x="20" y="35" width="70" height="55" rx="3" stroke="#c9a84c" stroke-width="1" fill="rgba(201,168,76,.05)"/>
+              <path d="M38 35 Q38 18 55 18 Q72 18 72 35" stroke="#c9a84c" stroke-width="1" fill="none"/>
+              <rect x="46" y="54" width="18" height="14" rx="1" stroke="#c9a84c" stroke-width=".7" fill="rgba(201,168,76,.1)"/>
+              <circle cx="55" cy="61" r="2" fill="#c9a84c" opacity=".4"/>
+            </svg>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:5px;color:rgba(201,168,76,.5)">PRODUK</p>
+          </div>
+        </div>
+        <div class="slide-overlay"><span class="slide-label">Product Mockup</span></div>
+      </div>
+
+      <!-- SLIDE 5 – Event / Cultural -->
+      <div class="swiper-slide">
+        <div class="slide-bg-5 slide-placeholder" style="position:relative;height:100%">
+          <div class="slide-pattern"></div>
+          <div style="text-align:center;z-index:2;position:relative;">
+            <svg width="100" height="110" viewBox="0 0 100 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto 1rem">
+              <!-- Temple / stage shape minimal -->
+              <rect x="15" y="75" width="70" height="25" stroke="#c9a84c" stroke-width=".8" fill="rgba(201,168,76,.05)"/>
+              <rect x="25" y="55" width="50" height="20" stroke="#c9a84c" stroke-width=".8" fill="rgba(201,168,76,.05)"/>
+              <rect x="35" y="35" width="30" height="20" stroke="#c9a84c" stroke-width=".8" fill="rgba(201,168,76,.06)"/>
+              <polygon points="50,15 65,35 35,35" stroke="#c9a84c" stroke-width=".8" fill="rgba(201,168,76,.08)"/>
+            </svg>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:5px;color:rgba(201,168,76,.5)">EVENT</p>
+          </div>
+        </div>
+        <div class="slide-overlay"><span class="slide-label">Event &amp; Budaya</span></div>
+      </div>
+
+    </div><!-- /swiper-wrapper -->
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+<!-- ════════════ CTA ════════════ -->
+<section id="cta">
+  <div class="section-inner">
+    <p class="section-label reveal">Mulai Bersama Kami</p>
+    <h2 class="section-title reveal reveal-delay-1">
+      Wujudkan <em>Visimu</em>
+    </h2>
+    <div class="section-divider reveal reveal-delay-2"><span class="dot"></span></div>
+    <p class="cta-tagline reveal reveal-delay-3">
+      Kami siap membantu mewujudkan ide kreatifmu — dari pakaian hingga kolaborasi jangka panjang.
+    </p>
+
+    <div class="cta-grid reveal">
+
+      <!-- CTA 1 -->
+      <div class="cta-card">
+        <div class="cta-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a11 11 0 0018.28 0l.58-3.57a2 2 0 00-1.34-2.23z"/><path d="M6 2v20M18 2v20"/></svg>
+        </div>
+        <h3>Pesan Baju / Desain</h3>
+        <p>Custom apparel &amp; desain grafis dengan sentuhan<br>estetika Bali yang khas.</p>
+        <a href="https://wa.me/628xxxxxxxxxx?text=Halo%20SWARNA%2C%20saya%20ingin%20pesan%20baju%2Fdesain" class="btn-gold" target="_blank">Pesan Sekarang</a>
+      </div>
+
+      <!-- CTA 2 -->
+      <div class="cta-card">
+        <div class="cta-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+        </div>
+        <h3>Kolaborasi</h3>
+        <p>Bangun proyek bersama — brand, event,<br>atau kampanye kreatif.</p>
+        <a href="mailto:hello@swarna.id" class="btn-outline">Hubungi Kami</a>
+      </div>
+
     </div>
   </div>
 </section>
-<section id="contact" class="contact-index py-5 bg-white">
- <div class="container">
-  <div class="row justify-content-center align-items-center">
-   <div class="col-md-5 mb-4">
-    <h2 class="fw-bold text-dark">Kontak Kami</h2>
-    <p class="text-muted">Untuk informasi lebih lanjut, silakan hubungi kami:</p>
-    <ul class="list-unstyled text-muted">
-     <li><i class="fas fa-envelope me-2 text-dark"></i> swarnacompany0@gmail.com</li>
-     <li><i class="fas fa-phone me-2 text-dark"></i> 0878-5009-0423</li>
-    </ul>
-   </div>
-   <div class="col-md-7">
-    <form action="#" class="shadow p-4 rounded bg-light">
-     <div class="mb-3">
-      <label for="name" class="form-label">Nama</label>
-      <input type="text" id="name" name="name" class="form-control" placeholder="Masukkan Nama Anda">
-     </div>
-     <div class="mb-3">
-      <label for="message" class="form-label">Pesan</label>
-      <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tulis Pesan Anda"></textarea>
-     </div>
-     <button type="submit" class="custom-btn fw-semibold" style="border: none;">Kirim Pesan</button>
-    </form>
-   </div>
+
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer id="footer">
+  <div class="footer-inner">
+
+    <div class="footer-top">
+
+      <!-- Brand col -->
+      <div class="footer-brand">
+        <span class="brand-name">SWARNA</span>
+        <span class="brand-tagline">Local Culture &nbsp;·&nbsp; Modern Identity</span>
+        <p>Studio kreatif Bali yang menjembatani tradisi dan modernitas. Kami percaya identitas lokal adalah kekuatan terbesar.</p>
+        <div class="social-row">
+          <!-- Instagram -->
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <!-- TikTok-like -->
+          <a href="#" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg>
+          </a>
+          <!-- WhatsApp -->
+          <a href="#" class="social-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Nav col -->
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#cta">Kolaborasi</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact col -->
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Denpasar, Bali<br>Indonesia</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.1 1.2 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.46-.46a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+          <span>+62 8xx-xxxx-xxxx</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>hello@swarna.id</span>
+        </div>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <div class="footer-bottom">
+      <p>© 2025 <span class="gold-accent">SWARNA</span> Production. All rights reserved.</p>
+      <p>Crafted with care in <span class="gold-accent">Bali</span></p>
+    </div>
+
   </div>
- </div>
-</section>
-<footer class="bg-dark text-light py-4 mt-5">
- <div class="container text-center">
-  <img src="img/SWARNA-logo no1.png" alt="Logo SWARNA" width="50" class="mb-2">
-  <h5 class="mb-2">SWARNA</h5>
-  <p class="mb-3 text-muted">Ragam Gaya, Satu Makna</p>
-  <div class="mb-3">
-   <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
-   <a href="#" class="text-light me-3"><i class="fab fa-whatsapp"></i></a>
-   <a href="#" class="text-light"><i class="fab fa-tiktok"></i></a>
-  </div>
-  <p class="text-muted small mb-0">&copy; 2025 SWARNA. All rights reserved.</p>
- </div>
 </footer>
 
- <script src="script.js"></script>
- <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
- <script src="fontawesome-free-6.4.2-web/js/all.min.js"></script>
+
+<!-- ════════════ SCRIPTS ════════════ -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+</script>
+
 </body>
 </html>
